@@ -1,0 +1,220 @@
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/logos/logo-s.png" width="255" height="82" alt="">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button"
+            (click)="isNavbarCollapsed = !isNavbarCollapsed" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div [ngbCollapse]="isNavbarCollapsed" class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" (click)="openLogin(content)">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Registrarse</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="hero d-flex align-items-center">
+    <div class="p-2">
+        <div class="row">
+            <div class="col-lg-4 d-flex flex-column justify-content-center col-left order-lg-1 order-md-2 order-sm-2"
+            data-aos="fade-right">
+                <div class="col-left-text">
+                    <h1 data-aos="fade-up" data-aos-duration="1500">¡Bienvenido!</h1>
+                    <h1 data-aos="fade-up" data-aos-duration="1500">A tu nuevo hogar</h1>
+                    <h1 data-aos="fade-up" data-aos-duration="1500">con Scotiabank</h1>
+                    <h2 data-aos="fade-up" data-aos-delay="400" data-aos-duration="1500">Aprovecha esta temporada y compra tu casa con un Crédito Hipotecario a tu medida.</h2>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="1500">
+                    <div class="text-center text-lg-start">
+                        <a (click)="goLogin()"
+                            class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                            <span>Iniciar sesión</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 hero-img p-0 orer-lg-2 order-md-1 order-sm-1" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="1500">
+                <img src="../../../../assets/img/photos/Scotia-Pic1.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+
+</section><!-- End Hero -->
+
+<!-- ======= Card Section ======= -->
+<section class="d-flex justify-content-around">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4 col-12 col-md-12 col-sm-12" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1500">
+                <div class="card">
+                    <div class="card-content">
+                      <div class="card-img">
+                        <img class="card-img-top img-fluid" src="../../../../assets/img/banner/banner-fovissste-para-todos.png" alt="Card image cap">
+                      </div>
+                      <div class="card-body">
+                        <h3>FOVISSSTE para Todos</h3>
+                        <p class="card-text">
+                            Permite a quienes cotizan en FOVISSSTE, dispongan de su saldo de subcuenta y obtengan un financiamiento con Scotiabank. </p>
+                      </div>
+                    </div>
+                    <div class="card-footer pt-0">
+                        <a class="card-link">Más información</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-12 col-md-12 col-sm-12" data-aos="fade-down" data-aos-delay="700" data-aos-duration="1500">
+                <div class="card">
+                    <div class="card-content">
+                      <div class="card-img">
+                        <img class="card-img-top img-fluid" src="../../../../assets/img/banner/banner-credito-cofinavit.webp" alt="Card image cap">
+                      </div>
+                      <div class="card-body">
+                        <h3>Crédito Cofinavit</h3>
+                        <p class="card-text">
+                            Confinavit es un financiamiento con Scotiabank que permite a las personas que cotizan en el INFONAVIT obtener un monto de financiamiento mayor al que otorga el Instituto por sí solo. </p>
+                      </div>
+                    </div>
+                    <div class="card-footer pt-0">
+                        <a class="card-link">Más información</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-12 col-md-12 col-sm-12"  data-aos="fade-up" data-aos-delay="800" data-aos-duration="1500">
+                <div class="card">
+                    <div class="card-content">
+                      <div class="card-img">
+                        <img class="card-img-top img-fluid" src="../../../../assets/img/banner/apoyo-infonavit-scotiabank.png" alt="Card image cap">
+                      </div>
+                      <div class="card-body">
+                        <h3>Apoyo Infonavit</h3>
+                        <p class="card-text">
+                            Podrías utilizar tu Apoyo Infonavit, tus aportaciones o el saldo de tu Subcuenta de Vivienda. </p>
+                      </div>
+                    </div>
+                    <div class="card-footer pt-0">
+                        <a class="card-link">Más información</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End Card Section -->
+
+<!-- ======= Logo Section ======= -->
+<div class="row mt-5">
+    <div class="col-12 text-center">
+        <img src="../../../../assets/img/logos/scotiabank_logo_rb.svg" class="img-scotia-logo" alt="">
+        <div>Tú decides, nosotros te asesoramos.<sup>®</sup></div>
+    </div>
+</div><!-- End Logo Section -->
+
+<!-- ======= Footer Section ======= -->
+<section class="d-flex justify-content-around mt-5 mb-5">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-sm-12 col-md-2 text-center">
+                <i class="fa-regular fa-circle-question fa-2x"></i>
+                <p class="mt-2"><a>Centro de Ayuda</a></p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-2 text-center">
+                <i class="fa-solid fa-diagram-project fa-2x"></i>
+                <p class="mt-2 mb-0">Educación financiera:</p>
+                <p class="m-0 p-0"><a>Blog</a> y <a>podcast</a></p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-2 text-center">
+                <i class="fa-solid fa-phone fa-2x"></i>
+                <p class="mt-2 mb-0">Atención a clientes:</p>
+                <p class="m-0 p-0"><a>55 5728 1900</a></p>
+                <p class="m-0 p-0"><a>Más números</a></p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-2 text-center">
+                <i class="fa-regular fa-message fa-2x"></i>
+                <p class="mt-2 mb-0">Redes Sociales</p>
+                <p class="m-0 d-flex justify-content-between">
+                    <a><i class="fa-brands fa-facebook fa-2x"></i></a>
+                    <a><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+                    <a><i class="fa-brands fa-youtube fa-2x"></i></a>
+                    <a><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    <a><i class="fa-brands fa-instagram fa-2x"></i></a>
+                </p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-2 text-center">
+                <i class="fa-solid fa-mobile-screen-button fa-2x"></i>
+                <p class="mt-2 mb-0">Descarga ScotiaMóvil</p>
+                <p class="m-0 d-flex justify-content-evenly">
+                    <a><i class="fa-brands fa-apple fa-2x"></i></a>
+                    <a><i class="fa-brands fa-android fa-2x"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section><!-- End Footer Section -->
+
+<!-- Modal Tiendas -->
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title"></h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body text-center">
+        <form [formGroup]="loginForm">
+            <div class="form-group">
+              <fieldset class="w-100">
+                <label for="basicInput">Usuario</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="fa-solid fa-user"></i>
+                    </span>
+                  </div>
+                  <input type="text" formControlName="username" class="form-control" placeholder="Usuario"
+                    [ngClass]="{ 'is-invalid': loginFormSubmitted && lf.username.invalid, 'is-valid': loginFormSubmitted && !lf.username.invalid }"
+                    required>
+                  </div>
+                  <div *ngIf="loginFormSubmitted && (lf.username.invalid || lf.username.errors?.required)"
+                    class="help-block text-danger"> <i class="ft-alert-circle align-middle"></i> Campo
+                    requerido
+                  </div>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <fieldset class="w-100">
+                <label for="basicInput">Contraseña</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="fa-solid fa-lock"></i>
+                    </span>
+                  </div>
+                  <input type="password" formControlName="password" class="form-control" placeholder="Contraseña"
+                    [ngClass]="{ 'is-invalid': loginFormSubmitted && lf.password.invalid, 'is-valid': loginFormSubmitted && !lf.password.invalid }"
+                    required>
+                  </div>
+                  <div *ngIf="loginFormSubmitted && (lf.password.invalid || lf.password.errors?.required)"
+                class="help-block mt-1 text-danger"> <i class="ft-alert-circle align-middle"></i> Campo requerido
+              </div>
+              </fieldset>
+            </div>
+            <div class="d-flex justify-content-between flex-sm-row flex-column">
+              <a class="btn btn-primary btn-block" (click)="onSubmit()">Ingresar</a>
+            </div>
+          </form>
+    </div>
+
+  </ng-template>
+  <!-- Fin Modal Tiendas -->
