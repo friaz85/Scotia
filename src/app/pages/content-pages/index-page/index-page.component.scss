@@ -192,6 +192,19 @@ body {
     left: 100%;
     visibility: visible;
   }
+
+  @media (min-width: 1200px) {
+    .vertical-menu .navbar {
+        margin-left: 0px !important;
+        transition: all 0.3s ease;
+    }
+    body.nav-collapsed:not(.horizontal-layout) .navbar {
+      margin-left: 0px !important;
+    }
+    body.nav-collapsed:not(.horizontal-layout) .main-panel .main-content {
+      margin-left: 0px !important;
+    }
+  }
   
   @media (max-width: 1366px) {
     .navbar .dropdown .dropdown ul {

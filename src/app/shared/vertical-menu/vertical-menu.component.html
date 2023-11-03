@@ -3,9 +3,9 @@
   <div class="logo clearfix">
     <a [routerLink]="['/page']" class="logo-text float-left">
       <div class="logo-img">
-        <!-- <img src="../../../assets/img/logos/logo-vertical-white.png" alt="Logo" class="imgLogo" *ngIf="!config.layout.sidebar.collapsed || !this.fullLayout.isMenuCollapsedOnHover"/> -->
-        <!-- <img src="../../../assets/img/logos/logo_blanco.png" alt="Logo" class="imgLogo-min" *ngIf="config.layout.sidebar.collapsed && this.fullLayout.isMenuCollapsedOnHover"/> -->
-        <img src="../../../assets/img/logos/Scotia-logo.png" alt="Logo" class="imgLogo-min"/>
+        <img src="../../../assets/img/logos/scotiabank_logo_rb.svg" alt="Logo" class="imgLogo" *ngIf="!config.layout.sidebar.collapsed || !this.fullLayout.isMenuCollapsedOnHover"/>
+        <img src="../../../assets/img/logos/Scotia-logo.png" alt="Logo" class="imgLogo-min" *ngIf="config.layout.sidebar.collapsed && this.fullLayout.isMenuCollapsedOnHover"/>
+        <!-- <img src="../../../assets/img/logos/Scotia-logo.png" alt="Logo" class="imgLogo-min"/> -->
       </div>
       <!-- <span class="text align-middle">Scotia</span> -->
       <!-- {{this.fullLayout.isMenuCollapsedOnHover}} -->
@@ -17,7 +17,7 @@
       <i #toggleIcon [ngClass]="{
         'ft-toggle-left': config.layout.sidebar.collapsed,
         'ft-toggle-right': !config.layout.sidebar.collapsed
-      }" class="toggle-icon"></i>
+      }" class="toggle-icon icon-scotia"></i>
     </a>
     <a class="nav-close d-block d-lg-block d-xl-none" id="sidebarClose" href="javascript:;" (click)="CloseSidebar()">
       <i class="ft-x"></i>
@@ -41,7 +41,7 @@
         </a>
         <a appSidebarAnchorToggle routerLink="{{menuItem.path}}"
           *ngIf="menuItem.submenu.length === 0 && !menuItem.isExternalLink">
-          <i [ngClass]="[menuItem.icon]"></i>
+          <img [src]="[menuItem.icon]" class="img-menu"/>
           <span class="menu-title" [ngClass]="[menuItem.class]">{{menuItem.title | translate }}</span>
           <span *ngIf="menuItem.badge && menuItem.badge != '' " [ngClass]="[menuItem.badgeClass]">{{menuItem.badge}}</span>
         </a>

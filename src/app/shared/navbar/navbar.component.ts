@@ -31,6 +31,7 @@ export class NavbarComponent implements OnInit, AfterViewInit, OnDestroy {
   public isCollapsed = true;
   layoutSub: Subscription;
   configSub: Subscription;
+  isNavbarCollapsed = true;
 
   nombre= '';
   casa= '';

@@ -3,16 +3,16 @@ import { RouteInfo } from './vertical-menu.metadata';
 //Sidebar menu Routes and data
 export const ROUTES: RouteInfo[] = [
   {
-    path: '/page', title: 'Inicio', icon: 'ft-home', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+    path: '/page', title: 'Evaluación', icon: '../../../assets/img/svg/Scotia-Icons-Eval.svg', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
   },
   {
-    path: '/page/1', title: 'Nuevo cliente', icon: 'fa-solid fa-plus', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+    path: '/page/1', title: 'Formalización', icon: '../../../assets/img/svg/Scotia-Icons-Formaliza.svg', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
   },
   {
-    path: '/page/2', title: 'Bandejas', icon: 'fa-solid fa-folder-open', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+    path: '/page/2', title: 'Reproceso', icon: '../../../assets/img/svg/Scotia-Icons-Reproceso.svg', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: []
   },
   {
-    path: '/page/3', title: 'Mi cuenta', icon: 'fa-solid fa-user-tie', class: 'bl', badge: '', badgeClass: '', isExternalLink: false, submenu: []
+    path: '/page/3', title: 'Firmado', icon: '../../../assets/img/svg/Scotia-Icons-Firmado.svg', class: 'bl', badge: '', badgeClass: '', isExternalLink: false, submenu: []
   },
   // {
   //   path: '', title: 'Menu Levels', icon: 'ft-align-left', class: 'has-sub', badge: '3', badgeClass: 'badge badge-pill badge-danger float-right mr-1 mt-1', isExternalLink: false,

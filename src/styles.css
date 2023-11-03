@@ -40,6 +40,32 @@ body { margin: 0;}
   position: relative;
   padding: 0.5rem 0 0.5rem 0.5rem !important;
   z-index: 4;
+  background: #fff !important;
+}
+.app-sidebar.menu-native-scroll .main-menu-content {
+  background: #fff !important;
+}
+
+.icon-scotia {
+  color: #E5202A;
+}
+
+.app-sidebar .navigation .menu-title {
+  color: #000 !important;
+
+}
+
+.app-sidebar .navigation li > a {
+  padding: 10px 10px 10px 10px !important;
+  border-top: 1px solid #999999;
+}
+
+.app-sidebar .navigation .menu-title {
+  font-size: 1.2rem !important;
+}
+
+.img-menu {
+  max-width: 100px;
 }
 
 .app-sidebar {
